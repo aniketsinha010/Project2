@@ -1,0 +1,6 @@
+writing comments in 'requirements.txt' was giving error, so writing the comments here...
+
+'-e.' : Install your local project in editable mode (i.e., changes in your code immediately reflect without reinstalling)
+As requirements.txt has -e., running pip install -r requirements.txt will install the current package in editable mode, using the instructions from setup.py.
+After running this Project2.egg-info will get created. Project2.egg-info/ is a metadata directory created by setuptools when you install your package (especially 
+in editable mode using -e .).It contains information about your package that tools like pip, setuptools, and Python packaging utilities use.
