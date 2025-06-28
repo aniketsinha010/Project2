@@ -23,26 +23,15 @@ The .egg-info folder helps with that by storing all the metadata needed for this
   -exceptions.py
   -logger.py
   -utils.py
+-notebook:
+  -data:
+    stud.csv
+  -EDA.ipynb
+  -Model_Training.ipynb
  
 
-src/
-│
-├── components/
-│   ├── __init__.py
-│   ├── data_ingestion.py
-│   ├── data_transformation.py
-│   └── model_trainer.py
-│
-├── pipeline/
-│   ├── __init__.py
-│   ├── predict_pipeline.py
-│   └── training_pipeline.py
-│
-├── __init__.py
-├── exceptions.py
-├── logger.py
-└── utils.py
-
-
 (*) src/exception.py : see chatgpt for the code explanation.(মনে রাখতে হবে না। কী করা হচ্ছে তা জানাই যথেষ্ট)
+
+(*) No, the notebook/ folder should not contain an __init__.py file. The notebook/ folder is intended for exploration, EDA, and experimentation using Jupyter 
+notebooks — not for reusable Python modules.
 
