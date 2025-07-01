@@ -26,7 +26,7 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         try:
-            numerical_columns = ['math_score', 'reading_score', 'writing_score']
+            numerical_columns = ['reading_score', 'writing_score']
             categorical_columns = ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
 
             numerical_pipeline = Pipeline(
@@ -68,7 +68,7 @@ class DataTransformation:
             logging.info("Obtaining preprocessing object")
             preprocessing_obj = self.get_data_transformer_object()
 
-            target_column = "average"
+            target_column = "math_score"
             input_feature_train_df = train_df.drop(target_column,axis=1)
             target_feature_train_df = train_df[target_column]
             input_feature_test_df = test_df.drop(target_column,axis=1)

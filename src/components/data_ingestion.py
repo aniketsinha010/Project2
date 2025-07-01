@@ -31,7 +31,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion component")
 
         try:
-            df = pd.read_csv('notebook\data\student.csv') 
+            df = pd.read_csv('notebook\data\stud.csv') 
             logging.info("Completed reading the dataset as DataFrame")
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)  ## This one line ensures the common directory 'artifacts' exists.
