@@ -10,4 +10,4 @@ xgboost
 dill
 flask
 streamlit
-#-e.  
+-e .  

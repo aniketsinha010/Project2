@@ -18,7 +18,7 @@ from typing import List
 
 
 
-HYPEN_E_DOT = '-e.'
+HYPEN_E_DOT = '-e .'
 
 ## Function to return the list of requirements...(-e.) shouldn't be here...
 def get_requirements(file_path: str) -> List[str]:
